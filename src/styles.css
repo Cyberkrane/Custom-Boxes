@@ -2,9 +2,11 @@
 :root{
     --fondo_de_pagina: rgb(70, 46, 11);
     --fondo_de_pagina_alt: rgb(88, 56, 8);
-    --fuentes-color: rgb(240, 243, 245);
-    --tertiary-color: #1a1a1a;
+    --fuentes-color: rgb(235, 241, 245);
+    --fuentes-2color: rgb(253, 249, 3);
+    --tertiary-color: #147235;
     --font-size: 18px;
+    --font-btn: 0.9rem;
 
 }
 body{
@@ -12,18 +14,18 @@ body{
 }
 .btn{
     width: fit-content;
-    font-size: var(--font-size);
-    font-weight: bold;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: outset;
+    font-size: var(--font-btn);
+    color: var(--fuentes-color);
+    background-color: var(--tertiary-color);
+    border: outset var(--tertiary-color);
     border-radius: 5px;
-    padding: 10px;
-
+    padding: 5px;
+    margin: 5px;
 }
 .btn:hover{
     background-color: var(--tertiary-color);
-    color: var(--secondary-color);
+    color: var(--fuentes-2color);
+    text-shadow: #16fd67 0.5px 0.5px;
     cursor: pointer;
 }
 
@@ -34,17 +36,28 @@ body{
     margin: 20px;   
 }
 
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
 .grid_item{
-    border: solid;
-    border-color: var(--primary-color);
-    border-radius: 5px;
-    padding: 5px;
-    background-color: var(--secondary-color);   
+    width: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--fuentes-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgb(7, 8, 8) 2px 2px 10px, rgb(7, 8, 8) -1px -1px 10px, rgb(7, 8, 8) 2px 2px 15px, rgb(7, 8, 8) -1px -1px 5px;
 }
 
 .grid_item:hover{
     background-color: var(--fondo_de_pagina);
     cursor: pointer;
 }
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
