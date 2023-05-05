@@ -1,0 +1,15 @@
+main{
+    background-color: var(--fondo_de_pagina);
+    width: 72vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        width: 95vw;
+        height: 30%;
+    }
+  }

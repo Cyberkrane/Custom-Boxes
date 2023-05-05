@@ -1,12 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
-    --primary-color: #1a1a1a;
-    --secondary-color: #fff;
+    --fondo_de_pagina: rgb(70, 46, 11);
+    --fondo_de_pagina_alt: rgb(88, 56, 8);
+    --fuentes-color: rgb(240, 243, 245);
     --tertiary-color: #1a1a1a;
     --font-size: 18px;
 
 }
-
+body{
+    background-color: var(--fondo_de_pagina);
+}
 .btn{
     width: fit-content;
     font-size: var(--font-size);
@@ -40,6 +43,8 @@
 }
 
 .grid_item:hover{
-    background-color: var(--tertiary-color);
+    background-color: var(--fondo_de_pagina);
     cursor: pointer;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
